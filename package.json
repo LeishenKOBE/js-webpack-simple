@@ -1,0 +1,20 @@
+{
+  "name": "js-webpack-simple",
+  "version": "1.0.0",
+  "description": "极其简单的webpack的js开发环境",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.17.0",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
