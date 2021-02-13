@@ -1,20 +1,16 @@
 {
-  "name": "js-webpack-simple",
+  "name": "demo",
   "version": "1.0.0",
-  "description": "极其简单的webpack的js开发环境",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server"
-  },
-  "repository": {
-    "type": "git"
+    "dev": "vite",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "webpack": "^5.17.0",
-    "webpack-cli": "3.3.12",
-    "webpack-dev-server": "^3.11.2"
+  "dependencies": {
+    "vite": "^2.0.0-beta.69"
   }
 }
