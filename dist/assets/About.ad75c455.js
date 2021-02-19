@@ -1,0 +1,1 @@
+import{n as t}from"./index.9fd7df33.js";import"./vendor.30274dc9.js";const n={};var e=t({name:"about"},(function(){var t=this,n=t.$createElement;return(t._self._c||n)("div",[t._v("about")])}),[],!1,(function(t){for(let e in n)this[e]=n[e]}),null,null,null).exports;export default e;
