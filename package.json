@@ -1,20 +1,51 @@
 {
   "name": "js-webpack-simple",
   "version": "1.0.0",
-  "description": "极其简单的webpack的js开发环境",
   "main": "index.js",
+  "repository": "https://github.com/LeishenKOBE/js-webpack-simple.git",
+  "author": "大家好我叫石同学 <wuyujiesong@outlook.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  },
+  "source": "src/main.js",
+  "targets": {
+    "index": {
+      "includeNodeModules": {
+        "axios": true,
+        "vue": true,
+        "vue-router": true,
+        "vuex": true,
+        "mockjs": false
+      },
+      "context": "browser",
+      "distDir": "./buildDir",
+      "outputFormat": "esmodule",
+      "scopeHoist": false,
+      "optimize": true,
+      "publicUrl": "/"
+    }
+  },
   "scripts": {
-    "dev": "webpack-dev-server"
+    "serve": "parcel ./public/index.html --port 3000 --no-source-maps",
+    "build": "parcel build ./public/index.html --no-source-maps"
   },
-  "repository": {
-    "type": "git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "webpack": "^5.17.0",
-    "webpack-cli": "3.3.12",
-    "webpack-dev-server": "^3.11.2"
+    "@parcel/transformer-image": "2.0.0-beta.2",
+    "@parcel/transformer-sass": "2.0.0-beta.2",
+    "@parcel/transformer-vue": "2.0.0-beta.2",
+    "@vue/compiler-sfc": "^3.0.9",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.23.0",
+    "eslint-plugin-vue": "^7.8.0",
+    "mockjs": "^1.1.0",
+    "parcel": "^2.0.0-beta.2",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "vue": "^3.0.9",
+    "vue-router": "4",
+    "vuex": "^4.0.0"
   }
 }
